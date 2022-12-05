@@ -1,13 +1,16 @@
 
-import Greet from './Greet';
-import Welcome from './Welcome';
-import Message from './Mesaage';
+import './App.css';
+import Greet from './components/Greet';
+import Welcome from './components/Welcome';
+import Message from './components/Mesaage';
+import Counter from './components/Counter';
 
 
 function App() {
   return (
     <div className="App">
-      <Message></Message>
+      <Counter></Counter>
+      {/* <Message></Message> */}
      {/* <Greet name="hana" heroName="soooper">
       This is children props
      </Greet>
