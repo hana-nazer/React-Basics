@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+
+import Greet from './Greet';
+import Welcome from './Welcome';
+import Message from './Mesaage';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-         Hello world
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Message></Message>
+     {/* <Greet name="hana" heroName="soooper">
+      This is children props
+     </Greet>
+     <Greet name="hanaa" heroName="powefulll"></Greet>
+     <Greet name="hanaaa" heroName="rfghj"></Greet>
+
+     <Welcome  name="hanaa" heroName="powefulll"></Welcome>
+     <Welcome name="hana" heroName="soooper"></Welcome>
+     <Welcome name="hanaa" heroName="powefulll"></Welcome> */}
+
+
+     
     </div>
   );
 }
