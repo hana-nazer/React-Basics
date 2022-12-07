@@ -5,35 +5,36 @@ constructor(props) {
   super(props)
 
   this.state = {
-     loggedIn : false
+     loggedIn : true
   }
 }
   render() {
+   return this.state.loggedIn && <div>Hello User</div>
 //ternary operator
-return(
-    this.state.loggedIn ? <div>Hello user</div> : <div> hello guest</div>
-)
+// return(
+//     this.state.loggedIn ? <div>Hello user</div> : <div> hello guest</div>
+// )
 
-// element variable 
-    let message 
-    if(this.state.loggedIn){
-        message = <div>Hllo user</div>
-    }else{
-        message = <div>hello guest</div>
-    }
-    return <div>{message}</div>
+// // element variable 
+//     let message 
+//     if(this.state.loggedIn){
+//         message = <div>Hllo user</div>
+//     }else{
+//         message = <div>hello guest</div>
+//     }
+//     return <div>{message}</div>
 
 
 // if else
-     if(this.state.loggedIn){
-        return(
-            <div>Hello user</div>
-        )
-     }else{
-        return (
-              <div>hello guest </div>
-          )
-     }
+    //  if(this.state.loggedIn){
+    //     return(
+    //         <div>Hello user</div>
+    //     )
+    //  }else{
+    //     return (
+    //           <div>hello guest </div>
+    //       )
+    //  }
    
   }
 }
